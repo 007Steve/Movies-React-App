@@ -1,0 +1,7 @@
+.header--image{
+    object-fit: contain;
+    width: 100%vh;
+    height:834px ;
+    border-radius: 10px;
+    
+}
