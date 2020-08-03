@@ -6,9 +6,9 @@ class Header extends Component {
     render() { 
         return (  
 
-           <div> 
-             <h1 className="header--title">Netfelix</h1>
-           <img className="header--image" src="https://cdn.mos.cms.futurecdn.net/x5PkQ5LG9JNTxh6BizyRbm.png" alt="
+           <div className="header"> 
+             
+           <img className="header--image" src="https://cdn.vox-cdn.com/thumbor/GS5aVofpjj3xAZmMMp2hBuYGmpE=/0x133:3151x1905/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/49901753/netflixlogo.0.0.png" alt="
            "/>
           
            </div>
