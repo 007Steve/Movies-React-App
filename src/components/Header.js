@@ -8,9 +8,7 @@ class Header extends Component {
 
            <div className="header"> 
              
-           <img className="header--image" src="https://cdn.vox-cdn.com/thumbor/GS5aVofpjj3xAZmMMp2hBuYGmpE=/0x133:3151x1905/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/49901753/netflixlogo.0.0.png" alt="
-           "/>
-          
+             <iframe width="1280" height="720" src="https://www.youtube.com/embed/xjDjIWPwcPU?list=PLCA0VrRcd-AFjo6K51glCxXWoRukPoJg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            </div>
 
         );
