@@ -2,6 +2,7 @@ nav {
     background-color: black;
     color: white;
     height: 80px;
+    width: auto;
 }
 
 .nav--logo{
@@ -17,4 +18,5 @@ li {
 position: relative;
 left: 1450px;
 font-size:26px;
+
 }
