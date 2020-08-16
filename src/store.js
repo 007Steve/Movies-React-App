@@ -1,21 +1,10 @@
 import { createStore,applyMiddleware,combineReducers,compose } from 'redux'
 import thunk from 'redux-thunk'
-
-
-
- const  moviesReducer = (state = [], action) => {
-    switch(action.type) {
-        case 'GET_MOVIES': 
-        return action.movies;
-
-        default:
-            return state;
-    }
- }
+import movies from './reducers/movies'
 
 
  const reducers =  combineReducers({
-    movies: moviesReducer
+    movies: movies
  })
 
  const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -23,6 +12,6 @@ import thunk from 'redux-thunk'
 
  export default createStore(
     reducers,
-    composeEnhancer(applyMiddleware(...middleware)),
+    composeEnhancer(applyMiddleware(...middleware))
 
 )
