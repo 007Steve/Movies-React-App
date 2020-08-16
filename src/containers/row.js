@@ -1,12 +1,11 @@
 import React from 'react'
-//import MovieCard from '../components/MovieCard'
+import Movie from './Movie'
 const Row = (props) => {
-    //<MovieCard key={props} movie={props}/> 
-    // move to Movie.js 
     return (  
-    <div>
-   
-    </div>
+      <div>
+          <h1 className="title-text">{props.title}</h1>
+         <Movie />
+      </div>
     );
 }
  
