@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import MovieCard from '../components/MovieCard'
-import MovieForm from './MovieForm'
+//import MovieCard from '../components/MovieCard'
+//import MovieForm from './MovieForm'
 import { connect } from 'react-redux'
 import { getMovies } from '../actions/movies'
+import { Link } from 'react-router-dom'
+
 class Movie extends Component {
     
     componentDidMount(){
@@ -14,8 +16,12 @@ class Movie extends Component {
              <div className="Movie-Container">
                      {this.props.movies.map(movie => 
                           <div key={movie.id} className="Movie-Card">
+                               <Link to={'/movies/' + movie.id} >
                               <img className="Movie-Image" src={movie.image} alt={movie.title}/>
-                           </div> )}
+                              </Link>   
+                           </div>
+                    
+                         )}
              </div> 
         
          );
