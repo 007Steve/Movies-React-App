@@ -9,6 +9,8 @@ import {
   Route,
   //Link
 } from "react-router-dom";
+import MovieForm from './MovieForm';
+import Recently from './Recently'
 
 
 
@@ -20,9 +22,11 @@ class App extends Component {
     <Router>
       <Switch>
        <Route exact  path="/movies:id"  component={Show}/> 
+       <Route exact  path="/movies/form"  component={MovieForm}/> 
         <div className="App">
          <Header/>
-         <Row title="Recently Added" />
+         <Recently/>
+        
          <Row title="Trending Now" />
          <Row title="Popular on Netflix" />
        </div>
