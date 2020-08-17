@@ -17,7 +17,7 @@ const addMovie = movie => {
 // Async Actions
  export const getMovies =  () => {
     return dispatch => {
-        return fetch('http://localhost:3000/movies')
+        return fetch(`http://localhost:3000/movies/`)
          .then(respone => respone.json())
          .then(movies => dispatch(setMovies(movies)))
          .catch(error => console.log(error))

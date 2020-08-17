@@ -3,6 +3,7 @@ nav {
     color: white;
     height: 80px;
     width: auto;
+    text-decoration: none;
 }
 
 .nav--logo{
@@ -16,7 +17,8 @@ li {
  display: inline;
  padding-left: 10px;
 position: relative;
-left: 1450px;
+left: 1200px;
 font-size:26px;
+text-decoration: none;
 
 }
