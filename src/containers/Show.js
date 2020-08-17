@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import movies from '../reducers/movies';
-
+//import movies from '../reducers/movies';
+import './show.css'; 
 
 class Show extends Component {
   
@@ -20,11 +20,14 @@ class Show extends Component {
 debugger
     return ( 
       <div className="show-container">
-        <img className="show-image" src={this.state.movies.image} />
-        <h1 className="show-title" >{this.state.movies.title}</h1>
-        <p className="show-description">{this.state.movies.description}</p>
-         <h3 className="show-category">{this.state.movies.category}</h3>
-        <p className="show-year">{this.state.movies.year}</p>
+       <img className="show-image" src={this.state.movies.image} alt={this.state.movies.title} />
+       <div className="show-info">
+       <h1 className="show-title" >{this.state.movies.title}</h1>
+        <p className="show-description"> <strong>Description :</strong> {this.state.movies.description}</p>
+         <h3 className="show-category"><strong>Category:</strong>  {this.state.movies.category}</h3>
+        <h3 className="show-year"> <strong>Year :</strong> {this.state.movies.year}</h3>
+       </div>
+        
       </div>
     
      );
