@@ -1,0 +1,42 @@
+.show-container{
+    background-color:black;
+   height: 100vh;
+}
+
+.show-image{
+    margin-top:80px;
+    margin-left: 30px;
+    width: 30%;
+    object-fit: contain;
+   
+ 
+}
+.show-title{
+ text-align: center;
+ color: white;
+ font-size:80px;
+}
+.show-description{
+    padding-top: 40px;
+    font-size: 30px;
+    text-align: left;
+    color: white;
+}
+.show-category{
+    padding-top: 40px;
+    color: white;
+    font-size: 30px;
+}
+.show-year{
+    padding-top: 40px;
+    color: white;
+    font-size: 30px;
+}
+.show-info {
+    background-color: black;
+    position: relative;
+    bottom: 630px;
+   left: 600px;
+    width: 800px;
+    height: 600px;
+}
