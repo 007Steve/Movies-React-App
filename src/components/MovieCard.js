@@ -1,13 +1,9 @@
  import React from 'react';
 import './movieCard.css';  
-const MovieCard = ({movie}) => {
-
-    return (   
-        <div key={movie.id} className="Movie-Card">
-        <img className="Movie-Image" src={movie.image} alt={movie.title}/>
-       
-      </div> );
-}
+const MovieCard = ({ movie }) => (
+      <h11></h11>
+        
+)
   
 export default MovieCard;
 
