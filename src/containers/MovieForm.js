@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { updateMovieFormData } from '../actions/movieForm'
 import { createMovie } from '../actions/movies'
-
+import './movieForm.css'; 
 class MovieForm extends Component {
 
    handleOnChange = event => {
@@ -18,36 +18,36 @@ class MovieForm extends Component {
        
    }
     render() { 
-        // add link to nav bar 
+       
         const { title, image, description, category, year } = this.props.movieFormData
         return (
             <div>
             <h2>Add a Movie</h2>
            <form onSubmit={this.handleOnSubmit}>
-               <div>
+               <div className="input-text">
                  <label htmlFor="title">Title</label>
                  <input type="text" onChange={this.handleOnChange} name="title" value={title}/>
                </div>
 
-               <div>
+               <div className="input-text">
                  <label htmlFor="image">Image</label>
                  <input type="text" onChange={this.handleOnChange} name="image" value={image}/>
                </div>
 
-               <div>
+               <div className="input-text">
                  <label htmlFor="description">Description</label>
                  <input type="text" onChange={this.handleOnChange} name="description" value={description}/>
                </div>
-               <div>
+               <div className="input-text">
                  <label htmlFor="category">Category</label>
                  <input type="text" onChange={this.handleOnChange} name="category" value={category}/>
              </div>
-             <div>
+             <div className="input-text" >
                  <label htmlFor="year">Year</label>
                  <input type="number" onChange={this.handleOnChange} name="year" value={year}/>
              </div>
 
-             <button type="submit">Submit</button>
+             <button  type="submit">Submit</button>
            </form>
        </div> 
         );
