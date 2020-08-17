@@ -4,6 +4,8 @@ export default (state = [], action) => {
         case 'GET_MOVIES': 
         return action.movies;
 
+        case 'CREATE_MOVIE':
+            return state.concat(action.movie)
         default:
             return state;
     }
